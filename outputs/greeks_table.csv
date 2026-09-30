@@ -1,0 +1,4 @@
+greek,black_scholes,pathwise,likelihood_ratio,finite_difference
+delta,0.5422,0.5421 +/-0.0012,0.5425 +/-0.0019,0.5423
+gamma,0.0198,n/a,0.0198 +/-0.0002,0.0199
+vega,39.6705,39.5298 +/-0.1454,n/a,39.7111

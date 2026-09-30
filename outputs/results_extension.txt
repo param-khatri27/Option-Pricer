@@ -1,0 +1,16 @@
+
+1. Arithmetic Asian call (S=100.0, K=105.0, T=1.0, r=0.05, sigma=0.2, 50 monitoring dates)
+------------------------------------------------------------------------------------------
+European call (Black-Scholes)        : 8.0214
+Geometric Asian call (closed form)   : 3.4122
+Arithmetic Asian, plain MC   N=200,000: 3.6211 +/- 0.0288 (95% CI)
+Arithmetic Asian, control variate    : 3.5946 +/- 0.0009 (95% CI)
+Standard error reduced 30.7x  ->  variance reduced 940x
+Sanity: geometric <= arithmetic <= European -> True
+
+2. Implied volatility solver
+----------------------------
+Round trip over 60 (sigma, strike, type) combinations: max |error| = 2.64e-12
+Synthetic smile recovered: max |error| = 2.00e-13
+
+Saved plots to ./outputs/
